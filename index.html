@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Srijan Mishra — CS Engineer & AI Enthusiast</title>
+  <title>Prakash Singh — CS Engineer & AI Enthusiast</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Source+Code+Pro:wght@400;500;600&display=swap"
@@ -16,10 +16,17 @@
 <body>
 
 
+  <div id="noise-overlay"></div>
+  <div class="bg-glow-container">
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+    <div class="bg-glow-3"></div>
+  </div>
+
   <div id="scroll-progress"></div>
 
   <nav id="navbar" class="nav-at-top">
-    <div class="nav-logo">&lt;<span>Mishra</span>/&gt;</div>
+    <div class="nav-logo">&lt;<span>Singh</span>/&gt;</div>
     <div class="nav-sidebar">
       <a href="#hero" class="nav-icon-link active magnetic" title="Home">
         <div class="icon-circle">🏠</div>
@@ -68,39 +75,54 @@
     <a href="#platforms" onclick="toggleMenu()">Practice</a>
     <a href="#projects" onclick="toggleMenu()">Projects</a>
     <a href="#education" onclick="toggleMenu()">Education</a>
-    <a href="#contact" onclick="toggleMenu()">contact</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
   </div>
-
-  <!-- HERO -->
   <section id="hero">
-    <div class="hero-bg-glow"></div>
-    <div class="hero-content" id="hero-tilt">
-      <div class="hero-text-area">
-        <div class="hero-header-area" data-animate style="animation-delay: 0.1s">
-          <div class="hero-profile-container">
-            <img src="profile-pic.png" alt="Srijan Mishra" class="hero-profile-pic">
-          </div>
+    <div class="hero-container">
+      <div class="hero-main">
+        <div class="hero-left" data-animate>
+          <div class="hero-badge">Available for Work</div>
           <h1 class="hero-name">
-            <span class="first">Srijan</span> <span class="last">Mishra</span>
+            <span class="prakash">Prakash</span> <br>
+            <span class="singh">Singh</span>
           </h1>
+          <p class="hero-intro">Computer Science Engineer & <span class="highlight">AI Architect</span></p>
+          <div class="hero-cta">
+            <a href="#projects" class="cta-primary magnetic">See My Work</a>
+            <a href="#about" class="cta-secondary magnetic">About Me</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/prakash-singh" target="_blank" class="social-icon-link magnetic"
+              title="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://github.com/prakash-singh" target="_blank" class="social-icon-link magnetic"
+              title="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="mailto:prakash.singh@gmail.com" class="social-icon-link magnetic" title="Email"><i
+                class="ri-mail-fill"></i></a>
+          </div>
         </div>
-        <p class="hero-title" data-animate style="animation-delay: 0.2s">I'm <span id="typewriter"></span></p>
-
-        <div class="hero-socials" data-animate style="animation-delay: 0.3s">
-          <a href="https://linkedin.com/in/srijan-mishra05" target="_blank" class="social-icon-link magnetic"
-            title="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
-          <a href="https://github.com/srijan439" target="_blank" class="social-icon-link magnetic" title="GitHub"><i
-              class="ri-github-fill"></i></a>
-          <a href="https://instagram.com" target="_blank" class="social-icon-link magnetic" title="Instagram"><i
-              class="ri-instagram-fill"></i></a>
-          <a href="mailto:srijanm89@gmail.com" class="social-icon-link magnetic" title="Email"><i
-              class="ri-mail-fill"></i></a>
+        <div class="hero-right" data-animate style="animation-delay: 0.3s">
+          <div class="hero-visual-card" data-tilt>
+            <div class="floating-icons">
+              <div class="float-icon fi-1">🤖</div>
+              <div class="float-icon fi-2">💻</div>
+              <div class="float-icon fi-3">🚀</div>
+            </div>
+            <div class="hero-profile-container">
+              <img src="profile-pic.png" alt="Prakash Singh" class="hero-profile-img">
+            </div>
+            <div class="hero-stats-overlay">
+              <div class="h-stat"><span class="h-num">5+</span><span class="h-lbl">Projects</span></div>
+              <div class="h-stat"><span class="h-num">8.2</span><span class="h-lbl">CGPA</span></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="hero-scroll" data-animate style="animation-delay: 1s">
-      <span>scroll</span>
-      <div class="scroll-line"></div>
+      <div class="hero-scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span>Scroll to explore</span>
+      </div>
     </div>
   </section>
 
@@ -119,7 +141,7 @@
           committed to engineering effective, user-focused software that delivers real-world value.</p>
         <div class="stats-row">
           <div class="stat-card">
-            <div class="stat-num">8.20</div>
+            <div class="stat-num">7.92</div>
             <div class="stat-lbl">CGPA</div>
           </div>
           <div class="stat-card">
@@ -139,7 +161,7 @@
             <img src="resume/Screenshot 2026-03-20 025852.png" alt="Resume Highlight" class="rh-img">
             <div class="rh-overlay">
               <div class="rh-buttons">
-                <a href="resume/resume.png" download="Srijan_CV.png" class="rh-btn download magnetic">
+                <a href="resume/resume.png" download="Prakash_CV.png" class="rh-btn download magnetic">
                   <span class="rh-btn-icon">📥</span>
                   <span class="rh-btn-text">Download</span>
                 </a>
@@ -152,7 +174,7 @@
           </div>
           <div class="rh-caption">
             <span class="rh-tag">RESUME / CV</span>
-            <span class="rh-filename">Srijan_CV.png</span>
+            <span class="rh-filename">Prakash_CV.png</span>
           </div>
         </div>
       </div>
@@ -430,7 +452,7 @@
                 <span class="tech-badge">CSS</span>
                 <span class="tech-badge">JavaScript</span>
               </div>
-              <a href="https://github.com/srijan439" target="_blank" class="project-link">View on GitHub →</a>
+              <a href="https://github.com/prakash-singh" target="_blank" class="project-link">View on GitHub →</a>
             </div>
           </div>
           <div class="project-card">
@@ -456,7 +478,7 @@
                 <span class="tech-badge">HTML</span>
                 <span class="tech-badge">CSS</span>
               </div>
-              <a href="https://github.com/srijan439" target="_blank" class="project-link">View on GitHub →</a>
+              <a href="https://github.com/prakash-singh" target="_blank" class="project-link">View on GitHub →</a>
             </div>
           </div>
           <div class="project-card">
@@ -482,7 +504,7 @@
                 <span class="tech-badge">Pandas</span>
                 <span class="tech-badge">Scikit-learn</span>
               </div>
-              <a href="https://github.com/srijan439" target="_blank" class="project-link">View on GitHub →</a>
+              <a href="https://github.com/prakash-singh" target="_blank" class="project-link">View on GitHub →</a>
             </div>
           </div>
           <div class="project-card">
@@ -508,7 +530,7 @@
                 <span class="tech-badge">Express</span>
                 <span class="tech-badge">MongoDB</span>
               </div>
-              <a href="https://github.com/srijan439" target="_blank" class="project-link">View on GitHub →</a>
+              <a href="https://github.com/prakash-singh" target="_blank" class="project-link">View on GitHub →</a>
             </div>
           </div>
         </div>
@@ -530,7 +552,7 @@
         <div class="timeline-content">
           <div class="timeline-year">2023 — PRESENT</div>
           <div class="timeline-title">B.Tech Computer Science Engineering</div>
-          <div class="timeline-sub">Lovely Professional University · CGPA: 8.20</div>
+          <div class="timeline-sub">Lovely Professional University · CGPA: 7.92</div>
           <div class="timeline-desc">Specializing in AI/ML, Data Structures & Algorithms, and Full Stack Development.
             Actively involved in building real-world projects.</div>
         </div>
@@ -552,10 +574,10 @@
         <div class="timeline-dot">⚙️</div>
         <div class="timeline-content">
           <div class="timeline-year">TRAINING</div>
-          <div class="timeline-title">Data Structures &amp; Algorithms (C++)</div>
+          <div class="timeline-title">Real world Machine Learning & AI: Scratch To Impact - Fifth Force</div>
           <div class="timeline-sub">Splen Technologies</div>
-          <div class="timeline-desc">Intensive training covering OOPs concepts, file handling, advanced data structures,
-            and algorithm optimization techniques for competitive programming.</div>
+          <div class="timeline-desc"> Learned how to apply my knowledge on real world problems.
+            • Learned to train and test machine learning models applying ml algorithms.</div>
         </div>
       </div>
     </div>
@@ -570,8 +592,7 @@
           <div class="certs-track" id="certs-track">
             <div class="cert-card" data-tilt>
               <div class="cert-image-container">
-                <img src="certificates/AlgoUniversity Graph Camp.png" alt="AlgoUniversity Graph Camp"
-                  class="cert-image">
+                <img src="certificates/algouniver.png" alt="AlgoUniversity Graph Camp" class="cert-image">
                 <div class="cert-overlay">
                   <span>View Certificate</span>
                 </div>
@@ -587,7 +608,7 @@
 
             <div class="cert-card" data-tilt>
               <div class="cert-image-container">
-                <img src="certificates/DSA Splen.png" alt="DSA Splen Technologies" class="cert-image">
+                <img src="certificates/dsa.png" alt="DSA Splen Technologies" class="cert-image">
                 <div class="cert-overlay">
                   <span>View Certificate</span>
                 </div>
@@ -603,7 +624,7 @@
 
             <div class="cert-card" data-tilt>
               <div class="cert-image-container">
-                <img src="certificates/Delloite.png" alt="Deloitte Certification" class="cert-image">
+                <img src="certificates/softwareeng.png" alt="Deloitte Certification" class="cert-image">
                 <div class="cert-overlay">
                   <span>View Certificate</span>
                 </div>
@@ -619,7 +640,7 @@
 
             <div class="cert-card" data-tilt>
               <div class="cert-image-container">
-                <img src="certificates/Java.png" alt="Java Programming" class="cert-image">
+                <img src="certificates/fifthForce.png" alt="Java Programming" class="cert-image">
                 <div class="cert-overlay">
                   <span>View Certificate</span>
                 </div>
@@ -685,21 +706,15 @@
         <p>I'm always open to discussing new projects, interesting ideas, or opportunities to collaborate. Whether
           you're a recruiter, fellow developer, or just curious — my inbox is open.</p>
         <div class="contact-links">
-          <a href="mailto:srijanm89@gmail.com" class="contact-item">
-            <div class="contact-icon">✉️</div>
-            <div><span class="contact-label">EMAIL</span><span class="contact-value">srijanm89@gmail.com</span></div>
+          <div><span class="contact-label">EMAIL</span><span class="contact-value">prakash.singh@gmail.com</span></div>
           </a>
           <a href="tel:+919569256657" class="contact-item">
             <div class="contact-icon">📱</div>
             <div><span class="contact-label">PHONE</span><span class="contact-value">+91-9569256657</span></div>
           </a>
-          <a href="https://linkedin.com/in/srijan-mishra05" target="_blank" class="contact-item">
-            <div class="contact-icon">💼</div>
-            <div><span class="contact-label">LINKEDIN</span><span class="contact-value">srijan-mishra05</span></div>
+          <div><span class="contact-label">LINKEDIN</span><span class="contact-value">prakash-singh</span></div>
           </a>
-          <a href="https://github.com/srijan439" target="_blank" class="contact-item">
-            <div class="contact-icon">🐙</div>
-            <div><span class="contact-label">GITHUB</span><span class="contact-value">srijan439</span></div>
+          <div><span class="contact-label">GITHUB</span><span class="contact-value">prakash-singh</span></div>
           </a>
         </div>
       </div>
@@ -707,7 +722,7 @@
         <div class="contact-form">
           <div class="form-group">
             <label>FULL NAME</label>
-            <input type="text" placeholder="Srijan Mishra">
+            <input type="text" placeholder="Prakash Singh">
           </div>
           <div class="form-group">
             <label>EMAIL</label>
@@ -715,7 +730,7 @@
           </div>
           <div class="form-group">
             <label>MESSAGE</label>
-            <textarea placeholder="Hey Srijan, I'd love to connect about..."></textarea>
+            <textarea placeholder="Hey Prakash, I'd love to connect about..."></textarea>
           </div>
           <button class="form-submit magnetic" onclick="handleSubmit()">Send Message ↗</button>
         </div>
@@ -725,15 +740,15 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-brand">&lt;<span>Srijan Mishra</span> /&gt; — Built with passion &amp; code</div>
+    <div class="footer-brand">&lt;<span>Prakash Singh</span> /&gt; — Built with passion &amp; code</div>
     <div class="footer-social">
-      <a href="https://github.com/srijan439" target="_blank" class="social-link" title="GitHub"><i
+      <a href="https://github.com/prakash-singh" target="_blank" class="social-link" title="GitHub"><i
           class="ri-github-fill"></i></a>
-      <a href="https://linkedin.com/in/srijan-mishra05" target="_blank" class="social-link" title="LinkedIn"><i
+      <a href="https://linkedin.com/in/prakash-singh" target="_blank" class="social-link" title="LinkedIn"><i
           class="ri-linkedin-box-fill"></i></a>
-      <a href="mailto:srijanm89@gmail.com" class="social-link" title="Email"><i class="ri-mail-fill"></i></a>
+      <a href="mailto:prakash.singh@gmail.com" class="social-link" title="Email"><i class="ri-mail-fill"></i></a>
     </div>
-    <div class="footer-copy">© 2026 Srijan Mishra. All rights reserved.</div>
+    <div class="footer-copy">© 2026 Prakash Singh. All rights reserved.</div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
